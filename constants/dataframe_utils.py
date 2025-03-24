@@ -1,5 +1,4 @@
 """
-This module defines constants used for managing and processing dataframes
 in the Restaurant Recommendations system. The constants are lists of column
 names that correspond to different aspects of the data.
 Constants:
@@ -11,6 +10,12 @@ Constants:
         ID, name, cuisine, rating, price range, and location.
     USER_NAMES (list): Column names describing user details, such as ID, age,
         gender, and preferred cuisine.
+    CATEGORICAL_COLUMNS (list): Column names that represent categorical data,
+        such as cuisine, price range, and location.
+    CONTINUOUS_COLUMNS (list): Column names that represent continuous numerical
+        data, such as restaurant ratings.
+    SOLO_COLUMN (str): A single column name representing the restaurant name.
+This module defines constants used for managing and processing dataframes
 """
 
 CONTEXT_NAMES = [

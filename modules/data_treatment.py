@@ -1,4 +1,26 @@
+"""
+This module provides functions to create dataframes for context, interactions,
+restaurants, and users from their respective CSV files. The dataframes are
+structured with predefined column names imported from the constants module.
+Functions:
+----------
+- create_context_df():
+    Reads the context.csv file and creates a dataframe with columns defined
+    by CONTEXT_NAMES.
+- create_interactions_df():
+    Reads the interactions.csv file and creates a dataframe with columns
+    defined by INTERACTION_NAMES. Additionally, it generates a unique
+    interaction_id for each row.
+- create_restaurants_df():
+    Reads the restaurants.csv file and creates a dataframe with columns
+    defined by RESTAURANT_NAMES.
+- create_users_df():
+    Reads the users.csv file and creates a dataframe with columns defined
+    by USER_NAMES.
+"""
+
 import pandas as pd
+
 from constants.dataframe_utils import (
     CONTEXT_NAMES,
     INTERACTION_NAMES,
